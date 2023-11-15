@@ -18,7 +18,7 @@ boton.addEventListener('submit', ev => {
    const elegido = select.selectedIndex
    const mes = parseInt(select.options[elegido].value) //Guardamos el valor del mes seleccionado
 
-   fetch(`http://nolaborables.com.ar/api/v2/feriados/${año}?formato=mensual`)
+   fetch(`https://nolaborables.com.ar/api/v2/feriados/${año}?formato=mensual`)
       .then(res => res.json())
       .then(data => {
          let arrayFeriados = Object.keys(data[mes]).map(str => parseInt(str,10)) // Parseamos todos los elementos string a int en base 10

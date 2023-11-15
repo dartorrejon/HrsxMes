@@ -18,7 +18,6 @@ function animateImage() {
 
   const posX = getRandomValue(0, windowWidth-(imgContainer.offsetWidth+5)); // Restamos el width de la img  para que la imagen no se salga del borde derecho
   const posY = getRandomValue(0, windowHeight-(imgContainer.offsetHeight+5)); // Restamos el width de la img para que la imagen no se salga del borde inferior
-  console.log(posX, posY)
 
   // Aplicar las animaciones utilizando transform y translate
   imgContainer.style.transform = `translate(${posX}px, ${posY}px)`;
