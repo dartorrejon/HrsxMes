@@ -8,6 +8,6 @@ Es totalemente responsive o al menos eso creo 😄.
 
 
 * El repositorio del mismo es [https://github.com/dartorrejon/HrsxMes](https://github.com/dartorrejon/HrsxMes) 💻.
-* El proyecto se encuentra deployado en [hrsxmes.netlify.app](hrsxmes.netlify.app) 🚀.
+* El proyecto se encuentra deployado en [hrsxmes.netlify.app](https://hrsxmes.netlify.app/) 🚀.
 
 
