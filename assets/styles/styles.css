@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+h1 {
+  font-weight: 400;
+
+
+}
+
+label,
+option,
+input {
+  font-weight: 300;
+  font-style: italic;
+}
+
+input {
+  padding: 0 3px;
+}
+
+h3,
+p {
+  font-weight: 400;
+}
+
+.card-container {
+  border-radius: 10px;
+  background-color: rgb(231, 231, 227, 0.777);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 30vh;
+  width: 500px;
+  min-width: 300px;
+  padding: 1rem;
+  opacity: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-container {
+  position: absolute;
+  z-index: -10;
+  transition: transform 2s ease-in-out, width 1s ease-in-out, height 1s ease-in-out;
+
+  width: 400px;
+  height: auto;
+}
+
+img {
+  width: 80%;
+  padding: 5px;
+  align-items: center;
+
+}
+
+@media screen and (max-width: 500px) {
+  body{
+    width: 100dvw;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-container{
+    width: 80vw;
+    height: auto;
+
+  }
+  .card-container > h1{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .img-container {
+    width: 10em;
+
+  }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.output-container{
+  font-size: .8em;
+}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .img-container {
+    width: 15em;
+  }
+}
